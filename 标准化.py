@@ -1,5 +1,4 @@
 #总的爬具体信息的py
-import os
 import requests
 from lxml import etree
 import json
@@ -46,4 +45,3 @@ for i in range(0,8):
     nameresult = html.xpath('/html/body/div[2]/div[4]/div[' + str(i + 1) + ']/a/text()')
     for j in range(0, len(urlresult)):
         getdata(urlresult[j],1)
-os.system("pause")
